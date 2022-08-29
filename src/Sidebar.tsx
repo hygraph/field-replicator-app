@@ -17,7 +17,6 @@ export function Sidebar() {
         .subscribeToFieldState(
           ORIGIN_FIELD,
           (state) => {
-            console.log({ state });
             form.change(DESTINATION_FIELD, state.value);
           },
           { value: true }
